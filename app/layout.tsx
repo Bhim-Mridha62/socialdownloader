@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   verification: {
-    google: "YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+    google: "gr3ZksuqWU4rq3ylgFRh0PsArfP1Bjk0XRr2s6lCKI8",
     other: {
-      "msvalidate.01": "YOUR_BING_WEBMASTER_VERIFICATION_CODE",
+      "msvalidate.01": "9A186FC0E3FA57C71D5874C82B367449",
     }
   }
 };
