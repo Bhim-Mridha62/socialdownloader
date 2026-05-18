@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "SocialDownloader — Free Video & Audio Downloader",
   description: "Download high-quality videos and audio from YouTube, Facebook, Instagram, and TikTok for free. No redirects, no sign-ups, and unlimited direct downloads.",
   keywords: [
-    "social media downloader", "download youtube video", "instagram reels downloader", 
-    "facebook video downloader", "tiktok no watermark downloader", "convert youtube to mp3", 
+    "social media downloader", "download youtube video", "instagram reels downloader",
+    "facebook video downloader", "tiktok no watermark downloader", "convert youtube to mp3",
     "twitter video downloader", "x video downloader", "download online videos free"
   ],
   authors: [{ name: "SocialDownloader" }],
@@ -18,12 +18,6 @@ export const metadata: Metadata = {
     description: "The fastest way to download videos and audio from social media platforms in HD/4K quality without redirects.",
     type: "website",
   },
-  verification: {
-    google: "gr3ZksuqWU4rq3ylgFRh0PsArfP1Bjk0XRr2s6lCKI8",
-    other: {
-      "msvalidate.01": "9A186FC0E3FA57C71D5874C82B367449",
-    }
-  }
 };
 
 export default function RootLayout({
@@ -33,8 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-50 text-slate-800 min-h-screen antialiased`}>
-        {children}
+      <head>
+        <meta name="google-site-verification" content="gr3ZksuqWU4rq3ylgFRh0PsArfP1Bjk0XRr2s6lCKI8" />
+        <meta name="msvalidate.01" content="9A186FC0E3FA57C71D5874C82B367449" />
+      </head>
+      <body>
+        <div className={`${inter.className} bg-slate-50 text-slate-800 min-h-screen antialiased`}>
+          {children}
+        </div>
       </body>
     </html>
   );
