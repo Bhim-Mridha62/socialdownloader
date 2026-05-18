@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .glass {
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.quality-table th, .quality-table td {
+    padding: 0.75rem 0;
+}
+.quality-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.quality-table tr:last-child {
+    border-bottom: none;
+}
