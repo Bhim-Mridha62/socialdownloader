@@ -1,8 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  // Replace with your actual production domain when deploying
-  const domain = "https://socialdownloader.online";
+  const domain = "https://socialdownloader-ten.vercel.app";
 
   return {
     rules: {
